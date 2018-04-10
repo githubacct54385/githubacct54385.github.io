@@ -1,29 +1,162 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<title>Alex Barke | Dev</title>
-
-    <link rel="shortcut icon" href="favicon.ico" />
-
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-	<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/styles.css">
-	<link rel="stylesheet" href="css/themes/red-white.css">
+  <title>Alex Barke - Dev</title>
+  <link rel="shortcut icon" href="favicon.ico" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap-styles.css">
+  <!--<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/styles.css">-->
 </head>
-<body>
-	<main>
-        <div class="intro">Hello, I'm Alex!</div>
-        <div class="tagline">Dev | Traveler | Foodie</div>
-		<div class="icons-social">
-			<a target="_blank" href="https://github.com/githubacct54385"><i class="fab fa-github"></i></a>
-            <a target="_blank" href="https://www.linkedin.com/in/alex-barke-002"><i class="fab fa-linkedin"></i></a>
-            <a target="_blank" href="https://www.instagram.com/alexbarke002/?hl=en"><i class="fab fa-instagram"></i></a>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage">Alex Barke</a>
     </div>
-	</main>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#summary">DEV SUMMARY</a></li>
+        <li><a href="#portfolio">PORTFOLIO</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron text-center">
+  <h1>Hello, I'm Alex</h1> 
+  <p>Dev | Traveler | Foodie</p> 
+<!--Facebook-->
+<a href="https://www.facebook.com/alex.barke.14" target="_blank" class="fb-ic mr-3"><i class="fa fa-lg fa-facebook"> </i></a>
+<!--Linkedin-->
+<a href="https://www.linkedin.com/in/alex-barke-002" target="_blank" class="li-ic mr-3"><i class="fa fa-lg fa-linkedin"> </i></a>
+<!--Instagram-->
+<a href="https://www.instagram.com/alexbarke002/?hl=en" target="_blank" class="ins-ic mr-3"><i class="fa fa-lg fa-instagram"> </i></a>
+<!--Github-->
+<a href="https://github.com/githubacct54385" target="_blank" class="git-ic mr-3"><i class="fa fa-lg fa-github"> </i></a>
+
+</div>
+
+<!-- Container (About Section) -->
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>About</h2><br>
+      <h4>I'm a California-native making a living in Singapore.  
+        I've been living in Asia for over a year now and have enjoyed it thoroughly.  
+        The food is cheaper, tastier, and more varied.  
+        The people are friendly and public transit is remarkably better than California.
+        I spent most of 2017 working as a volunteer in the local branch 
+        of my church based in Colombo, Sri Lanka.  
+        I recently moved to Singapore and acquired a developer 
+        role with a focus on cybersecurity.</h4><br>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-globe logo"></span>
+    </div>
+  </div>
+</div>
+
+<div id="summary" class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-12 text-center"><h2>Dev Summary</h2></div>
+    <div class="row">
+      <div class="col-sm-4">
+        <h3>Databases</h3>
+        <i class="fa fa-database" style="font-size:48px;color:#AF3D4E"></i>
+        <h3>I've worked with a handful of DBs (MSSQL, PostgreSQL, MongoDB) and Redis cache.
+          I have experience writing queries and connecting these to my backend.</h3>
+      </div>
+      <div class="col-sm-4">
+        <h3>Backend Programming</h3>
+        <i class="fa fa-gear" style="font-size:48px;color:#AF3D4E"></i>
+        <h3>This is my bread and butter.  I have working experience with C#, VB, and Java.
+          In my spare time, I've taught myself Ruby (my new favorite).
+        </h3>
+      </div>
+      <div class="col-sm-4">
+        <h3>Web Design</h3>
+        <i class="fa fa-html5" style="font-size:48px;color:#AF3D4E"></i>
+        <h3>Some of my most recent personal projects have been here.  
+          I've taught myself Rails, Sinatra, Node.js, and Flask in the last couple months.
+          I've also been growing in my respect and knowledge of frontend frameworks 
+          out there incuding React and Bootstrap. 
+        </h3>
+      </div>
+    </div>
+<br>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div id="portfolio" class="container-fluid text-center">
+  <div class="row">
+    <h2>Portfolio (In Progress)</h2><br>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-folder-open logo slideanim"></span></p>
+    </div>
+    <div class="col-sm-8">
+      <h1>Portfolio goes here</h1>
+    </div>
+  </div>
+</div><br />
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+    // Prevent default anchor click behavior
+    event.preventDefault();
+
+    // Store hash
+    var hash = this.hash;
+
+    // Using jQuery's animate() method to add smooth page scroll
+    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 900, function(){
+   
+      // Add hash (#) to URL when done scrolling (default click behavior)
+      window.location.hash = hash;
+    });
+  });
+  
+  // Slide in elements on scroll
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
 </body>
 </html>
