@@ -12,8 +12,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/bootstrap-styles.css">
-  <!--<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/styles.css">-->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
@@ -38,17 +37,18 @@
 </nav>
 
 <div class="jumbotron text-center">
-  <h1>Hello, I'm Alex</h1> 
-  <p>Dev | Traveler | Foodie</p> 
-<!--Facebook-->
-<a href="https://www.facebook.com/alex.barke.14" target="_blank" class="fb-ic mr-3"><i class="fa fa-lg fa-facebook"> </i></a>
-<!--Linkedin-->
-<a href="https://www.linkedin.com/in/alex-barke-002" target="_blank" class="li-ic mr-3"><i class="fa fa-lg fa-linkedin"> </i></a>
-<!--Instagram-->
-<a href="https://www.instagram.com/alexbarke002/?hl=en" target="_blank" class="ins-ic mr-3"><i class="fa fa-lg fa-instagram"> </i></a>
-<!--Github-->
-<a href="https://github.com/githubacct54385" target="_blank" class="git-ic mr-3"><i class="fa fa-lg fa-github"> </i></a>
+  <h1>Hello, I'm Alex</h1>  
 
+  <div id="socialicons">
+    <!--Github-->
+    <a class="icon" href="https://github.com/githubacct54385" target="_blank"><i class="fa fa-github"></i></a>
+    <!--Linkedin-->
+    <a class="icon" href="https://www.linkedin.com/in/alex-barke-002" target="_blank"><i class="fa fa-linkedin"></i></a>
+    <!--Instagram-->
+    <a class="icon" href="https://www.instagram.com/alexbarke002/?hl=en" target="_blank"><i class="fa fa-instagram"></i></a>
+    <!--Email-->
+    <a class="icon" href="mailto:alexbarke002@gmail.com"><i class="fa fa-envelope"></i></a>
+  </div>
 </div>
 
 <!-- Container (About Section) -->
@@ -57,9 +57,7 @@
     <div class="col-sm-8">
       <h2>About</h2><br>
       <h4>I'm a California-native making a living in Singapore.  
-        I've been living in Asia for over a year now and have enjoyed it thoroughly.  
-        The food is cheaper, tastier, and more varied.  
-        The people are friendly and public transit is remarkably better than California.
+        I've been living in Asia for over a year now.  
         I spent most of 2017 working as a volunteer in the local branch 
         of my church based in Colombo, Sri Lanka.  
         I recently moved to Singapore and acquired a developer 
@@ -93,7 +91,7 @@
         <i class="fa fa-html5" style="font-size:48px;color:#AF3D4E"></i>
         <h3>Some of my most recent personal projects have been here.  
           I've taught myself Rails, Sinatra, Node.js, and Flask in the last couple months.
-          I've also been growing in my respect and knowledge of frontend frameworks 
+          I've also been growing in my knowledge of frontend frameworks 
           out there incuding React and Bootstrap. 
         </h3>
       </div>
@@ -157,6 +155,5 @@ $(document).ready(function(){
   });
 })
 </script>
-
 </body>
 </html>
