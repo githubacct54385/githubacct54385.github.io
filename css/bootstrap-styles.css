@@ -205,3 +205,19 @@ body {
 #socialicons .icon:hover{
     color: grey;
 }
+
+#codeicons {
+    text-align: center;
+}
+
+#codeicons .icon {
+    color: white;
+    display: inline-block;
+    font-size: 20px;
+    text-align: center;
+    margin: 0 6px 5px;
+}
+
+#codeicons .icon:hover {
+    color: grey;
+}
