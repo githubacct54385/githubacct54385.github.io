@@ -19,6 +19,7 @@
   
   <!--Local Stylesheets-->
   <link rel="stylesheet" href="css/bootstrap-styles.css">
+  <link rel="stylesheet" href="css/animation.css">
 
   <!--Font Awesome Style Links-->
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
@@ -129,20 +130,23 @@
       <h1>Donation Campaigns</h1>
       <h3>Crowdsourcing website for church donations</h3>
       <div>
-        <span>
-          <i class="devicon-rails-plain" title="Made with Rails" style="color:#AF3D4E; font-size: 3em;"></i>
+        <span class="rails-icon">
+          <i class="devicon-rails-plain" title="Made with Rails"></i>
         </span>
         <span class="codeicons">
           <a class="icon" href="https://github.com/githubacct54385/DonationCampaigns" target="_blank"><i class="fa fa-code"></i></a>
         </span>
+      </div>
+      <div>
+        <a class="link-to-site" href="https://churchdonations.herokuapp.com/" target="_blank">See it in action!</a>
       </div>
     </div>
     <div class="col-sm-3">
       <h1>Redis Rails</h1>
       <h3>Simple website demonstrating how to rate limit an IP Address connecting to your site.</h3>
       <div>
-          <span>
-            <i class="devicon-rails-plain" title="Made with Rails" style="color:#AF3D4E; font-size: 3em;"></i>
+          <span class="rails-icon">
+            <i class="devicon-rails-plain" title="Made with Rails"></i>
           </span>
           <span class="codeicons">
             <a class="icon" href="https://github.com/githubacct54385/RedisRails" target="_blank"><i class="fa fa-code"></i></a>
@@ -162,17 +166,15 @@
           </span>
         </div>
         <div>
-          <span>
-            <a style="color:#AF3D4E;" href="https://enigmatic-lowlands-58124.herokuapp.com/" target="_blank">See it in action!</a>
-          </span>
+          <a class="link-to-site" href="https://enigmatic-lowlands-58124.herokuapp.com/" target="_blank">See it in action!</a>
         </div>
       </div>
       <div class="col-sm-3">
           <h1>Stock Insights</h1>
           <h3>Given a stock ticker, a start and end date, find the best day to buy and sell the stock within that range.</h3>
           <div>
-              <span>
-                <i class="devicon-rails-plain" title="Made with Rails" style="color:#AF3D4E; font-size: 3em;"></i>
+              <span class="rails-icon">
+                <i class="devicon-rails-plain" title="Made with Rails"></i>
               </span>
               <span class="codeicons">
                 <a class="icon" href="https://github.com/githubacct54385/StocksApp" target="_blank"><i class="fa fa-code"></i></a>
@@ -184,44 +186,9 @@
 
 <footer class="container-fluid text-center">
   <a href="#myPage" title="To Top">
-    <span class="glyphicon glyphicon-chevron-up"></span>
+    <span class="jumping-chevron glyphicon glyphicon-chevron-up"></span>
   </a>
 </footer>
-
-<script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links in navbar + footer link
-  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
-
-    // Prevent default anchor click behavior
-    event.preventDefault();
-
-    // Store hash
-    var hash = this.hash;
-
-    // Using jQuery's animate() method to add smooth page scroll
-    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-    $('html, body').animate({
-      scrollTop: $(hash).offset().top
-    }, 900, function(){
-   
-      // Add hash (#) to URL when done scrolling (default click behavior)
-      window.location.hash = hash;
-    });
-  });
-  
-  // Slide in elements on scroll
-  $(window).scroll(function() {
-    $(".slideanim").each(function(){
-      var pos = $(this).offset().top;
-
-      var winTop = $(window).scrollTop();
-        if (pos < winTop + 600) {
-          $(this).addClass("slide");
-        }
-    });
-  });
-})
-</script>
+<script src="js/index.js"></script>
 </body>
 </html>

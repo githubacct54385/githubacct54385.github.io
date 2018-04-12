@@ -254,3 +254,17 @@ footer .glyphicon {
     font-size:48px;
     color:#AF3D4E;
 }
+
+.rails-icon {
+    color:#AF3D4E;
+    font-size: 3em;
+}
+
+.link-to-site {
+    color:#AF3D4E;
+}
+
+.link-to-site:hover {
+    color: grey;
+    opacity: 0.7;
+}
