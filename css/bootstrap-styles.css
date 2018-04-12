@@ -237,3 +237,20 @@ footer .glyphicon {
   color: grey;
   opacity: 0.7;
 }
+
+.badge-icon {
+    color:#AF3D4E;
+}
+
+#id-badge .icon {
+    color: #AF3D4E;
+    display: inline-block;
+    font-size: 240px;
+    text-align: center;
+    margin: 0 6px 5px;
+}
+
+.devsummary .icon {
+    font-size:48px;
+    color:#AF3D4E;
+}
